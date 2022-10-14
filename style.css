@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #393838;
+    font-family: 'Roboto', sans-serif;
+}
+/* Header Section */
+header{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+    background-color: black;
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    padding-left: 50px;
+}
+span{
+    color: #1b9576;
+    font-style: oblique;
+}
+
+/* Nav Section */
+nav li{
+    display: inline-block;
+    text-align: center;
+    list-style: none;
+    padding: 5px 32px;
+    background-color: transparent;
+    border: 1px solid #23c094;
+    border-radius: 7px ;
+}
+nav li:hover{
+    background-color: #187075;
+    color: #66efc6;
+}
+nav li .active{
+    color: #ffffff;
+}
+nav li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #05d589;
+}
+nav li a:hover{
+    color: #76f1d8;
+}
+
+/* Overmij Section */
+
+section{
+    min-height: calc(100vh - 110px);
+    width: 900PX;
+    max-width: 97%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    margin: 150px auto;
+    border-radius: 5px;
+}
+
+.mijn{
+    padding: 10px 32px;
+    margin: 20px auto;
+}
+
+.mijn img{
+    display: block;
+    width: 30%;
+    margin: 50px auto;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 20px;
+}    
+.overmij-text{
+    width: 750px;
+    max-width: 100%; 
+    padding: 10px 20px;
+    margin: 10px auto;
+}
+.overmij-text h2{
+    color: white;
+    font-size: 40px;
+    text-transform: capitalize;
+    margin: 0px 55px ;
+    text-align: left;
+    border-bottom: 1px solid #23c094;
+}
+
+.overmij-text h4{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: right;
+    margin-right: 50px;
+    margin-top: 5px;
+    margin-bottom: 45px;
+}
+
+.overmij-text p{
+    color: #ffffff;
+    line-height: 22px;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    text-align: justify;
+    text-transform: capitalize;
+}
+
+/* Contact Pagina */
+
+form{
+    margin: 32px auto;
+    border-radius: 5px;
+    padding: 35px 48px;
+}
+form .title h2{
+    text-align: center;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: white;
+    border-bottom: 2px solid #23c094;
+    text-transform: uppercase;
+}
+form .title p{
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+    margin-bottom: 48px;
+    color: white;
+}
+form .tweevelden{
+    display: flex;
+    justify-content: space-between;
+}
+form .tweevelden .naam{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    width: 47%;
+}
+form label{
+    display: block;
+    color: #1b9576;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+form .tweevelden .naam input{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 15px;
+    border: 1px solid #23c094;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+form .emailadres input{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #23c094;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+form .volledigveld{
+    margin-bottom: 25px;
+}
+
+form .volledigveld textarea{
+    font-size: 16px;
+    color: white;
+    width: 100%;
+    height: 150px;
+    padding: 10px 15px;
+    margin-bottom: 25px;
+    border: 1px solid #23c094;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+form button{
+    padding: 0 10px;
+    margin-bottom: 5px;
+    border: 2px solid #23c094;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0ae0a0;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    height: 40px;
+    background-color: #1b3e3e;
+    cursor: pointer;
+}
+
+form button:active{
+    background-color: #187075;
+    color: white;
+}
+
+/* Mijncv Pagina */
+
+table{
+    border-collapse: collapse;
+    width: 750px;
+    margin: 150px auto;
+    border-radius: 5px;
+    padding: 55px 30px;
+    font-size: 16px;
+}
+caption{
+    margin-bottom: 22px;
+    text-transform: uppercase;
+    color: #1b9576;
+}
+
+table th{
+    background-color: #00544E;
+    padding: 15px 20px;
+    color: #3edecb;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #f8f8f8;
+}
+table td{
+    padding: 15px 20px;
+    color: white;
+} 
+table tr{
+    border-bottom: 1px solid #2B8984;
+}
+
+
+/* Footer Section */
+
+footer{
+    background-color: black;
+    width: 100%;
+    height: 55px;
+    padding: 20px 10px;
+    color: white;
+    text-align: center;
+}
