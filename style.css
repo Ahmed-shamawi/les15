@@ -4,25 +4,35 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #393838;
+    background-color: #383939;
     font-family: 'Roboto', sans-serif;
 }
-/* Header Section */
-header{
-    width: 100%;
-    height: 55px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10px;
-    background-color: black;
+
+/* Overall*/
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
-.logo{
+/* Header Section */
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    min-height: 70px;
+    background-color: #35424a;
+    color: #ffffff;
+    border-bottom: 3px solid #23c094;
+    padding-top: 30px;
+}
+header .logo{
     font-size: 30px;
     font-weight: bold;
     color: white;
-    cursor: pointer;
-    padding-left: 50px;
+    float: left;
 }
 span{
     color: #1b9576;
@@ -30,52 +40,57 @@ span{
 }
 
 /* Nav Section */
+
+nav{
+    float: right;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
 nav li{
-    display: inline-block;
-    text-align: center;
-    list-style: none;
-    padding: 5px 32px;
+    display: inline;
+    float: left;
+    padding: 5px 20px 5px 20px;
+    margin: 0 5px;
     background-color: transparent;
     border: 1px solid #23c094;
     border-radius: 7px ;
 }
 nav li:hover{
     background-color: #187075;
-    color: #66efc6;
+    color: #1b9576;
 }
-nav li .active{
-    color: #ffffff;
-}
+
 nav li a{
     text-decoration: none;
     font-size: 18px;
     color: #05d589;
 }
 nav li a:hover{
-    color: #76f1d8;
+    color: #ffffff;
+}
+nav li .active{
+    color: #e5f8f4;
+    text-transform: uppercase;
 }
 
 /* Overmij Section */
 
-section{
-    min-height: calc(100vh - 110px);
-    width: 900PX;
-    max-width: 97%;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 10px;
-    margin: 150px auto;
-    border-radius: 5px;
-}
-
 .mijn{
     padding: 10px 32px;
-    margin: 20px auto;
+    margin: 50px 100px;
+    min-height: calc(100vh - 110px);
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    
 }
 
-img{
+.mijn img{
     display: block;
     width: 30%;
-    margin: 50px auto;
+    margin: 100px auto;
     border: 1px solid white;
     border-radius: 50%;
     padding: 20px;
@@ -109,10 +124,10 @@ img{
 
 .overmij-text p{
     color: #ffffff;
-    line-height: 22px;
-    font-size: 16px;
-    padding: 5px;
-    margin-bottom: 20px;
+    line-height: 2rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 5rem;
     letter-spacing: 1px;
     text-align: justify;
     text-transform: capitalize;
@@ -121,7 +136,8 @@ img{
 /* Contact Pagina */
 
 form{
-    margin: 32px auto;
+    width: 80%;
+    margin: 50px auto;
     border-radius: 5px;
     padding: 35px 48px;
 }
@@ -160,6 +176,7 @@ form label{
     font-weight: bold;
     letter-spacing: 2px;
     margin-bottom: 10px;
+    padding-left: 10px;
 }
 
 form .tweevelden .naam input{
@@ -227,7 +244,7 @@ form button:active{
 
 table{
     border-collapse: collapse;
-    width: 750px;
+    width: 80%;
     margin: 150px auto;
     border-radius: 5px;
     padding: 55px 30px;
@@ -259,13 +276,13 @@ table tr{
 /* Footer Section */
 
 footer{
-    background-color: black;
+    background-color: #35424a;
     width: 100%;
     height: 55px;
     padding: 20px 10px;
     color: white;
     text-align: center;
 }
-footer a{
+footer a {
     color: #05d589;
 }
