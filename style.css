@@ -266,3 +266,6 @@ footer{
     color: white;
     text-align: center;
 }
+footer a {
+    color: #05d589;
+}
